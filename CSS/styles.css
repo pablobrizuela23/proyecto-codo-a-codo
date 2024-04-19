@@ -1,0 +1,261 @@
+/*Reseteo valores*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+
+}
+/*variables*/
+:root{
+    --color-primario:#ebebf2;
+    --color-secundario:#161579;
+    --color-terciario:#0a0a0a;
+}
+
+body{
+    color:var(--color-primario);
+    background-color:var(--color-terciario);
+}
+/*generalidades*/
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+ 
+header,footer{
+    background-color: var(--color-secundario);
+    padding: 12px;
+    
+}
+
+/*Estilos del header*/
+.header{
+    height: 15vh;
+    position: sticky;
+    top: 0;
+
+    .menu{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        ul{
+            list-style: none;
+            display: flex;
+            column-gap: 15px;
+
+        }
+        a{
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: var(--color-primario);
+        } 
+        
+    }
+
+}
+
+.contenedorFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+.contenedorFlexHijo{
+    flex-direction: column;
+}
+
+
+.seccionPrincipal{
+    height: 87vh;
+    text-align: center; 
+    margin-bottom: 20px;
+    background-image: linear-gradient(to top, #000000b9,#000000b9), url(/assets/img/Friends-choosing-what-movies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .contenidoSeccPrin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+       
+        a{
+           
+            display: inline-block;
+            color: var(--color-primario);
+            font-size: 1.8rem;
+            padding: 10px 20px;
+            border: 2px solid var(--color-primario);
+            border-radius: 5px;
+            text-decoration: none;
+        }
+      
+    }
+    
+  
+    
+}
+
+.seccionBusqueda{
+    display: flex;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+
+    .contenidoSeccionBusqueda{
+    
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.tendenciasHoy{
+    text-align: center;
+    h2{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .contenedorImagenes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap;
+        gap: 80px;
+
+        .imagenes{
+            flex-direction: column;
+           
+           }
+          
+            img{
+                border-radius: 2%;
+                box-shadow: 0px 0px 24px 5px rgba(33,76,207,0.59);
+                width: 400px;
+                height: 650px;
+                object-fit: cover;
+                }   
+    }
+                button{
+                    margin-top: 20px;
+                    margin-bottom: 60px;
+                    margin-left: 12px;
+                    padding: 10px 20px;
+                }
+}
+
+.aclamadas{
+    text-align: center;
+    margin-bottom: 60px;
+    h2{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .contendorAclamadas{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        
+
+        .imagenesAclamadas{
+            border-radius: 18px;
+            
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            
+        }
+        img{
+            
+            border-radius: 5%;
+            box-shadow: 0px 0px 12px 5px rgba(33,76,207,0.59);
+            width: 200px;
+            height: 300px;
+            object-fit: cover;    
+        }
+    }
+    
+}
+
+.formulario{
+    width: auto;
+    height: 100vh;
+    text-align: center;
+    overflow: auto;
+    background-image: linear-gradient(to top, #000000b9,#000000b9),
+     url(/assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+.formularioRegistro{
+    margin-top: 22px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(29, 29, 30);
+    border: 3px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    
+
+}
+.campos_formulario{
+    flex-direction: column;
+}
+.fondoLogin{
+    background-image: linear-gradient(to top, #000000b9,#000000b9),
+     url(/assets/img/background\ login.jpg);
+     height: 100vh;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+    
+}
+footer ul{
+    padding-top: 22px;
+    text-align: center;
+}
+
+footer li{
+    display: inline-block;
+    margin: 10px;
+    padding: 50px 0px;
+}
