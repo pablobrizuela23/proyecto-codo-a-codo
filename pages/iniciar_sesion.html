@@ -8,31 +8,34 @@
     <title>Iniciar Sesion</title>
 </head>
 <body>
-    <header>
-        <h3><a href="/index.html">El CAC Movies</a></h3>
+    <header class="header">
+        
         <nav class="menu">
+            <a href="/index.html"><span>MOVIE ZONE</span></a>
             <ul>
                 <li><a href="" class="linea">Tendencia</a></li>
-                <li><a href="pages/registrarse.html">Registrarse</a></li>
-                <li><a href="pages/iniciar_sesion.html">Iniciar Sesion</a></li>
+                <li><a href="./registrarse.html">Registrarse</a></li>
+                <li><a href="#">Iniciar Sesion</a></li>
             </ul>
         </nav>
     </header>
     <main >
         
-        <section class="formulario fondoLogin">
+        <section class="formulario formularioInicioSesion">
             
-            <form action="" method="post" class="formularioRegistro" >
-                <h1>Registro</h1>
-                <div class="campos_formulario">
+            <form action="" method="post"  >
+                <h2>Iniciar sesión</h2>
+                <div class="">
                     <input type="email" name="email" required id="email" placeholder="email">
                 </div>
-                <div class="campos_formulario">
+                <div class="">
                     <input type="password" name="password" id="password" required placeholder="Contraseña">
                 </div>
-                <div class="campos_formulario">
+                <div class="boton">
                     <input type="submit" value="Registrarse">
                 </div>
+                <a href="#"><p>¿Olvidaste tu contraseña?</p></a>
+                <a href="./registrarse.html"><p>¿No tienes una cuenta? Registrate</p></a>
                 
             </form>
         </section>

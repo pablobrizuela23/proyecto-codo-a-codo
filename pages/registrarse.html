@@ -7,51 +7,55 @@
     <title>Registrase</title>
 </head>
 <body>
-    <header>
-        <h3><a href="/index.html">El CAC Movies</a></h3>
+    <header class="header">
+        
         <nav class="menu">
+            <a href="/index.html"><span>MOVIE ZONE</span></a>
             <ul>
-                <li><a href="">Tendencia</a></li>
-                <li><a href="pages/registrarse.html">Registrarse</a></li>
-                <li><a href="pages/iniciar_sesion.html">Iniciar Sesion</a></li>
+                <li><a href="" class="linea">Tendencia</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="./iniciar_sesion.html">Iniciar Sesion</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="formulario">
+        <section class="formulario formularioRegistro">
 
-                <form action="" method="post" class="formularioRegistro">
-                    <h1>Registro</h1>
-                    <div class="campos_formulario"> 
+                <form action="" method="post">
+                    <h2>Registro</h2>
+                    <div> 
                         <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                     </div>
-                    <div class="campos_formulario">
+                    <div>
                         <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
                     </div>
-                    <div class="campos_formulario">
+                    <div>
                         <input type="email" name="email" id="email" placeholder="Email" required>
                     </div>
-                    <div class="campos_formulario">
+                    <div>
                         <input type="password" name="password" id="password" placeholder="Contraseña" required>
                     </div>
-                   <div class="campos_formulario">
                     <label for="fechanac">Fecha de Nacimiento</label>
-                    <input type="date" name="fechanac id="fechanac>
+                   <div class="fecha">
+                    <input type="date" name="fechanac" id="fechanac">
                    </div>
-                   <select name="" id="" class="campos_formulario">
+                   <select name="" id="">
                         <option value="argentina">Argentina</option>
                         <option value="peru">Peru</option>
                         <option value="mexico">Mexico</option>
                         <option value="chile">Chile</option>
                    </select>
-                   <div class="campos_formulario">
+                   <div>
                     <label for="terminosYCondiciones">Acepta terminos y condiciones</label>
                     <input type="checkbox" name="terminosYCondiciones" id="terminosYCondiciones">
                    </div>
-                   <div class="campos_formulario">
-                    <input type="reset" value="Limpiar Campos">
-                    <input type="submit" value="Registrarse">
-                   </div>
+                   
+                    <div class="botones">
+                        <input type="reset" value="Limpiar Campos">
+                        <input type="submit" value="Registrarse">
+                    </div>
+                    
+                
                    
                 </form>
             
@@ -59,13 +63,16 @@
         </section>
         
     </main>
-    <footer>
-        <ul>
-            <li><a href="">Terminos y condiciones</a></li>
-            <li><a href="">Preguntas Frecuentes</a></li>
-            <li><a href="">Ayuda</a></li>
-            <li><a href="">Administrador Peliculas</a></li>
-        </ul>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Preguntas Frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+       
     </footer>
 </body>
 </html>
