@@ -25,14 +25,14 @@ body{
 /*generalidades*/
 
 h1{
-    font-size: 4rem;
+    font-size: 3.4rem;
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 h2{
     font-size: 2.4rem;
     margin-bottom: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 h3{
     font-size: 1.7rem;
@@ -68,30 +68,39 @@ header,footer{
     height: 15vh;
     position: sticky;
     top: 0;
-
+    z-index: 1000;
     .menu{
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px;
+        
+        
 
      
         ul{
             list-style: none;
             display: flex;
             column-gap: 15px;
+            li{
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
 
         }
         
         a{
             text-decoration: none;
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             color: var(--color-primario);
             
           
             
         } 
+        li:hover{
+            
+            box-shadow: 0px 0px 13px 2px rgba(11,81,244,0.75);
+        }
         .fa-solid ,fa-clapperboard{
             font-size: 2.4rem;
             margin-right: 8px;
@@ -113,7 +122,8 @@ header,footer{
         height: initial;
         .menu{
             flex-direction: column;
-            row-gap: 15px;
+            row-gap: 10px;
+            
         }
     }
 }
@@ -148,6 +158,12 @@ header,footer{
             border: 2px solid var(--color-primario);
             border-radius: 5px;
             text-decoration: none;
+            
+        }
+        a:hover{
+            background-color: #161579;
+            box-shadow: 0px 0px 12px 1px rgba(11,81,244,0.75);
+            border: 2px solid black;
         }
       
     }
@@ -158,10 +174,12 @@ header,footer{
 /*Media query 992px*/
 @media screen and ( max-width: 992px){
     .seccionPrincipal{
+        height: 70vh;
+        background-position-x: center;
         .contenidoSeccPrin{
             width: 90%;
             a{
-                font-size: 1.8rem;
+                font-size: 1.3rem;
             }
         }
     }
@@ -185,14 +203,27 @@ header,footer{
                 font-size: 1.4rem;
                 padding: 8px 60px;
                 border-radius: 25px;
+                
+            }
+            input:focus{
+                border:2px solid deepskyblue;
+                background-color: lightcyan;
+                outline: none;
+                box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
             }
             button{
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 padding: 8px 20px; 
                 border-radius: 25px;
                 margin-left: 5px;
                 color: var(--color-terciario);
                 background-color: var(--color-botones);
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: var(--color-secundario);
+                color: var(--color-primario);
+                box-shadow: 0px 0px 12px 1px rgba(11,81,244,0.75);
             }
          }
     }
@@ -219,6 +250,7 @@ header,footer{
         row-gap: 30px;
         margin-bottom: 20px;
         
+        
 
         .imagenes{
             
@@ -227,6 +259,8 @@ header,footer{
             border-radius: 5px;
             overflow: hidden;
             box-shadow: 0px 0px 10px 5px rgba(33,76,207,0.59);
+            transition: transform 0.3s ease;
+            overflow: hidden;
             img{
                 width: 100%;
                 height: 100%;
@@ -236,11 +270,14 @@ header,footer{
                 } 
            
            }
-          
+           .imagenes:hover {
+            transform: scale(1.1); /* Ajusta el nivel de zoom */
+        }
               
     }
+    
                 button{
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     margin-top: 20px;
                     margin-bottom: 60px;
                     margin-left: 12px;
@@ -248,17 +285,22 @@ header,footer{
                     border-radius: 25px;
                     background-color: var(--color-botones);
                 }
+                button:hover{
+                    background-color: var(--color-secundario);
+                    color: var(--color-primario);
+                    box-shadow: 0px 0px 12px 1px rgba(11,81,244,0.75);
+                }
 }
 /*Media query 992px*/
 @media screen and ( max-width: 992px){
     .tendenciasHoy{
-        width: 96%;
+        width: 90%;
         .contenedorImagenes{
             justify-content: center;
             row-gap: 22px;
             .imagenes{
-                width: 300px;
-                height: 380px;
+                width: 220px;
+                height: 320px;
             }
             
         }
@@ -367,7 +409,14 @@ header,footer{
                 border-radius: 5px;
                 padding: 5px 15px;
             }
+            
          }
+         input:focus{
+            border:2px solid deepskyblue;
+            background-color: lightcyan;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+        }
     }
   
 }   
@@ -407,6 +456,12 @@ header,footer{
                 border-radius: 5px;
                 }
             
+                }
+                input:focus{
+                    border:2px solid deepskyblue;
+                    background-color: lightcyan;
+                    outline: none;
+                    box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
                 }
         a{
             
@@ -567,12 +622,19 @@ header,footer{
             align-items: center;
             column-gap: 15px;
             li{
+                padding: 10px 10px;
+                border-radius: 10px;
                 a{
                     text-decoration: none;
                     color: var(--color-primario);
-                    font-size: 1.4rem;
+                    font-size: 1.1rem;
                 }
             }
+
+        }
+        li:hover{
+            
+            box-shadow: 0px 0px 13px 2px rgba(11,81,244,0.75);
         }
     }
 }
