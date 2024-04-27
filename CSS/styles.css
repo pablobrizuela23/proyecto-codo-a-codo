@@ -133,7 +133,7 @@ header,footer{
     height: 87vh;
     text-align: center; 
     margin-bottom: 20px;
-    background-image: linear-gradient(to top, #000000b9,#000000b9), url(/assets/img/Friends-choosing-what-movies.jpg);
+    background-image: linear-gradient(to top, #000000b9,#000000b9), url(/assets/img/fondoSeccionPrin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
