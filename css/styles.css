@@ -370,7 +370,7 @@ header,footer{
 .formularioRegistro{
     
     background-image: linear-gradient(to top, #000000b9,#000000b9),
-     url(/assets/img/background.jpg);
+     url(../assets/img/background.jpg);
     height: 100vh;
     form{
         display:flex;
@@ -423,7 +423,7 @@ header,footer{
 .formularioInicioSesion{
   
     background-image: linear-gradient(to top, #000000b9,#000000b9),
-     url(/assets/img/background\ login.jpg);
+     url(../assets/img/background\ login.jpg);
      height: 85vh;
      form{
         display: flex;
@@ -477,7 +477,7 @@ header,footer{
 /*seccion pagina detalles*/
 .detalle{
     height: 85vh;
-    background-image: linear-gradient(to right, rgba(31.5, 31.5, 31.5, 1) calc((50vw - 170px) - 340px), rgba(31.5, 31.5, 31.5, 0.84) 50%, rgba(31.5, 31.5, 31.5, 0.84) 100%), url(/assets/img/pag_detalles/fondo3.jpg);
+    background-image: linear-gradient(to right, rgba(31.5, 31.5, 31.5, 1) calc((50vw - 170px) - 340px), rgba(31.5, 31.5, 31.5, 0.84) 50%, rgba(31.5, 31.5, 31.5, 0.84) 100%), url(../assets/img/pag_detalles/fondo3.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
