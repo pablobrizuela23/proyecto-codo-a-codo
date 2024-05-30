@@ -22,23 +22,28 @@
     <main>
         <section class="formulario formularioRegistro">
 
-                <form action="" method="post">
+                <form id="formReg" method="post">
                     <h2>Registro</h2>
                     <div> 
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" >
+                        <div id="nombreError" class="mensajeError"></div>
                     </div>
                     <div>
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+                        <div id="apellidoError" class="mensajeError"></div>
                     </div>
                     <div>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email" >
+                        <div id="emailError" class="mensajeError"></div>
                     </div>
                     <div>
-                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                        <div id="passwordError" class="mensajeError"></div>
                     </div>
-                    <label for="fechanac">Fecha de Nacimiento</label>
+                    <label for="fechaNac">Fecha de Nacimiento</label>
                    <div class="fecha">
-                    <input type="date" name="fechanac" id="fechanac">
+                    <input type="date" name="fechaNac" id="fechaNac">
+                    <div id="fechaError" class="mensajeError"></div>
                    </div>
                    <select name="" id="">
                         <option value="argentina">Argentina</option>
@@ -49,6 +54,7 @@
                    <div>
                     <label for="terminosYCondiciones">Acepta terminos y condiciones</label>
                     <input type="checkbox" name="terminosYCondiciones" id="terminosYCondiciones">
+                    <div id="tYCError" class="mensajeError"></div>
                    </div>
                    
                     <div class="botones">
@@ -75,5 +81,7 @@
         </nav>
        
     </footer>
+    
+    <script src="../js/validacionesRegistro.js"></script>
 </body>
 </html>

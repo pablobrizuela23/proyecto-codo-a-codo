@@ -228,6 +228,20 @@ header,footer{
          }
     }
 }
+@media screen and ( max-width: 992px){
+    .seccionBusqueda{
+        .contenidoSeccionBusqueda{
+            form{
+                input{
+                    
+                    padding-left: 3px;
+                    padding-right: 3px;
+                   
+                }
+            }
+        }
+    }
+}
 
 .tendenciasHoy{
     
@@ -610,6 +624,34 @@ header,footer{
         }
     }
 }
+/*estilos para los errores*/
+.mensajeError{
+    color: #ff0000; 
+    font-size: 0.9em; 
+    font-weight: bold; 
+    margin-top: 5px; 
+    
+}
+
+/*seccion para el clima*/
+.seccionClima {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+    color:#0a0a0a;
+   
+}
+
+.seccionClima h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0a0a0a;
+}
+
+.seccionClima #datosClima {
+    font-size: 1.2em;
+}
+
 
 
 .footer{

@@ -23,23 +23,27 @@
         
         <section class="formulario formularioInicioSesion">
             
-            <form action="" method="post"  >
-                <h2>Iniciar sesión</h2>
-                <div class="">
-                    <input type="email" name="email" required id="email" placeholder="email">
+            <form id="inicioSesion" method="post"  >
+                <h2>Inicia sesión</h2>
+                <div class="erroresForm">
+                    <input type="email" name="email" id="email" placeholder="email">
+                    <div id="emailError" class="mensajeError"></div>
                 </div>
-                <div class="">
-                    <input type="password" name="password" id="password" required placeholder="Contraseña">
+                <div class="erroresForm">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <div id="passwordError" class="mensajeError"></div>
                 </div>
                 <div class="boton">
-                    <input type="submit" value="Registrarse">
+                    <input type="submit" value="Iniciar Sesion">
                 </div>
                 <a href="#"><p>¿Olvidaste tu contraseña?</p></a>
                 <a href="./registrarse.html"><p>¿No tienes una cuenta? Registrate</p></a>
                 
             </form>
+
         </section>
     </main>
    
+    <script src="../js/validaciones.js"></script>
 </body>
 </html>
