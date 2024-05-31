@@ -624,7 +624,7 @@ header,footer{
         }
     }
 }
-/*estilos para los errores*/
+/*estilos para los errores de las validaciones*/
 .mensajeError{
     color: #ff0000; 
     font-size: 0.9em; 
