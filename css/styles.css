@@ -636,7 +636,9 @@ header,footer{
 /*seccion para el clima*/
 .seccionClima {
     padding: 20px;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to top, #c1b0b0bf,#c1b0b0bf), url(../assets/img/imagenclima.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 20px 0;
     color:#0a0a0a;
    
